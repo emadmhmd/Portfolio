@@ -1,0 +1,48 @@
+{
+    "Concept, theory, and system":[
+        "Programming Concepts and Paradigms (OOP , FP , … )" ,	
+        "Database",
+        "Data structure , Algorithms",
+        "Software Engineering",
+        "System analysis and design",
+        "Methodologies (Agile)",
+        "Testing (ISTQB Foundation)",
+        "Solid , Design principles, design Patterns ",
+        "Operating system , Networking and Internet application concepts"
+        ],
+    "Tools and Technologies":[
+       "javaScript", 
+       "typescript ",     
+       "react",   
+       "node",
+       "express",   
+       "jQuery", 
+       "jest", 
+       "eslint", 
+       "webpack", 
+       "gulp",               
+       "sQL", 
+       "sql server", 
+       "mysql",
+       "mongodb",
+       "html",
+       "css",
+       "boodstrap",
+       "sass",
+       "webapis",
+       "swo",
+       "ux",
+       "pwa",
+       "git", 
+       "cmd", 
+       "npm" 
+    ],
+    "touched":[
+       "C#/.net", 
+       "Java", 
+       "PHP/Laravel", 
+       "C/C++", 
+       "Python"
+    ]
+}
+  

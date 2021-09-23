@@ -1,0 +1,546 @@
+/* framwork ****************************************************/
+*{
+    margin: 0;
+    padding: 0
+}
+body {
+    background: url(../Images/maxresdefault.jpg);
+    font-family: 'Open Sans', sans-serif;
+    transition: all 1s ease-in-out
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.hidden{
+    display: none;
+    transition:all 1 ease-in-out;
+}
+.table {
+    height: 100%;
+    display: table
+}
+
+.table-row {
+    display: table-row
+}
+
+.bodyOver{
+    background: rgba(2, 6, 7,.85);
+    background-repeat: repeat;
+    width: 100% ;
+}
+/* start header */ 
+.Header{
+    overflow: hidden;
+    color: white;
+    padding-top:85px;
+
+}
+.header .profile{
+    width: 30%;
+    float: left;
+    position:relative;
+    margin-top: 50px;
+    margin-right: 5%;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    height: 600px;
+    background: rgba(2, 6, 7,.70);
+    color: white;
+    padding: 1%;
+    text-align: center;
+
+}
+.header .profile .img{
+    width: 70%;
+    border: 2.5px solid white;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.header .profile .headline1{
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: rgb(0, 93, 173);
+    
+}
+.header .profile .headline2{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.header .intro{
+    width: 60%;
+    float: left;
+    margin-top: 50px;
+    height: 600px;
+}
+.header .intro .summary{
+    border-radius: 50px;
+    border: 1px solid transparent;
+    height: 70%;
+    background: rgba(2, 6, 7,.70);
+    color: white;
+    padding: 2%;
+    width:100%;
+    text-align: center;
+}
+.header .intro p{
+    font-size: 20px;
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.header .intro p::first-letter{
+    color: rgb(0, 93, 173);
+    font-weight: bold;
+    font-size: 25px;
+}
+.header .intro .contact{
+    border-radius: 50px;
+    border: 1px solid transparent;
+    height: 25%;
+    background: rgba(2, 6, 7,.70);
+    color: white;
+    padding: 2%;
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+    
+}
+.intro .contact a , .intro .contact abbr{
+    color: white; 
+    text-decoration: none;
+    font-size: 20px;
+}
+.header  button{
+    width: 150px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px rgb(0, 93, 173) solid ;
+    border-radius: 10px;
+    color: white;
+    height: 35px;
+    margin-left: 40%;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+/*.header .intro .contact{
+    margin-left: 210px;
+    margin-top: 40px;
+}*/
+.header .intro .contact i{
+    margin-right: 15px;
+    font-size: 24px;
+    transition: all .5s ease-in-out;
+}
+.header .intro .contact i:hover{
+    color:rgb(0, 93, 173) ;
+    transform: scale(1.2,1.2)
+}
+
+/*end header */
+/* start navbar */
+.nav{
+    margin-top: 60px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    height: 80px;
+    background: rgba(2, 6, 7,.70);
+    color: white;
+}
+
+.nav .logo{
+    width: 30%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}
+.nav .logo h3{
+    font-size: 24px;
+    border-bottom: 4px solid rgb(0, 93, 173);
+    border-radius: 10px;
+    width: 10%;
+    padding: 6px;
+}
+
+.nav .logo span{
+    color: rgb(0, 93, 173);
+    padding: 2px;
+}
+.nav .sections{
+    float: right;
+    width: 60%;
+    
+}
+.nav .sections ul{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.nav .sections ul li{
+   margin-right: 30px;
+   float: left;
+   list-style: none;
+   padding-bottom: 5px;
+}
+
+.nav .sections ul li a:hover{
+    color:rgb(0, 93, 173) ;
+    transform: scale(1.5,1.5);
+    cursor: pointer;
+
+}
+.nav .sections ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: all .6s ease-in-out;
+    
+}
+/* end navbar */
+/*start content/view */
+.downloadbtn{
+    text-align: center;
+    
+    background: transparent;
+    border: 1px solid rgb(0, 93, 173);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px;
+    font-size: 19px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .7s ease-in-out;
+}
+.downloadbtn a{
+    text-decoration: none;
+    color: white;
+}
+.downloadbtn:hover{
+    cursor: pointer;
+    background: rgb(0, 93, 173);
+    color: white;
+
+}
+
+.content{
+    border-radius: 20px;
+    margin-top: 25px;
+    overflow: hidden;
+    background: rgba(2, 6, 7,.70);
+    padding: 80px;
+    padding-top: 0;
+}
+.content .h{
+    font-size: 28px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+}
+.content .h span{
+    color: rgb(0, 93, 173);
+    border-bottom: 1px solid rgb(0, 93, 173);
+    margin-left: 10px;
+}
+.content .hh{
+    font-size: 28px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: white;
+}
+.content .hh span{
+    color: rgb(0, 93, 173);
+    border-bottom: 1px solid rgb(0, 93, 173);
+    margin-left: 1px;
+}
+.content .about{
+    position: relative;
+}
+.content .about .sum{
+    font-size: 22px;
+    line-height: 1.4;
+    white-space: 1.2;
+    text-align: center;
+    border: 1px solid rgb(0, 93, 173);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 40px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: white;
+}
+.content .resume{
+    position: relative;
+    margin-top: 150px;
+}
+.skills{
+    overflow: hidden;
+    padding-left: 2%;
+    padding-top: 50px;
+    width: 100%;
+    
+}
+/* .skill{
+    color: white;
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    border: 1px solid rgb(0, 93, 173);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    margin-right: 2%;
+    position: relative;
+    transition: all 1s ease-in-out;
+    margin-bottom: 30px;
+}
+.skill:hover{
+    cursor: pointer;
+}
+.skill:hover .skillover{
+    display: block;
+
+} */
+/* .skill p{
+    width: 40%;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+  
+} */
+.skill{
+    color: white;
+    float: left;
+    overflow: hidden;
+    width: 10%;
+    border-bottom: .2px solid rgb(0, 93, 173);
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5%;
+    transition: all 1s ease-in-out;
+    margin-bottom: 20px;
+    color: rgb(0, 93, 173);
+    text-align: left;
+
+}
+
+.concepts{
+    overflow: hidden;
+    padding-left: 2%;
+    padding-top: 50px;
+}
+.concepts .con{
+    margin-right: 5%;
+    color: white;
+    width: 45%;
+    float: left;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.concepts .con::first-letter{
+    font-size: 30px;
+    color: rgb(0, 93, 173);
+}
+.subHeader{
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(0, 93, 173);
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.skill img{
+    width :60%;
+    float: left;
+    height: 40px;
+    
+}
+.skill .fa{
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    color: rgb(0, 93, 173);
+}
+.skillover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 93, 173);
+    border: 1px solid rgb(0, 93, 173);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    transition: all .7s ease-in-out;
+}
+.skillover p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+   margin-right: 70px;
+}
+
+.blog{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 100px;
+}
+.double{
+    width: 45%;
+    margin-bottom: 50px;
+    margin-right: 4%;
+
+    
+}
+.signle{
+    width: 80%;
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 10%;;
+    margin-right: 10%;
+    
+}
+.article {
+    border-bottom: 1px solid rgb(0, 93, 173);
+    border-right: 1px solid rgb(0, 93, 173);
+    border-radius: 20px;
+    padding-bottom: 1px;
+    float: left;
+    color: white;
+    overflow: hidden;
+}
+.ar-img:hover {
+    transform: scale(.95 , .95);
+}
+.showDemoBtn{
+    width: 150px;
+    background: transparent;
+    border: none;
+    border-bottom: .5px rgb(0, 93, 173) solid ;
+    border-radius: 10px;
+    height: 35px;
+    margin-left: 5%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 20px;
+    transition: all .5 ease-in-out;
+}
+.showDemoBtn a{
+    text-decoration: none;
+    color: white;
+}
+.showDemoBtn:hover{
+    color: rgb(0, 93, 173);
+}
+.links{
+    margin-top: 25px;
+    margin-left: 30%;
+}
+.link{
+    color: white;
+    text-align: center;
+    margin-right: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(0, 93, 173);
+    border-radius: 5px;
+    padding: 10px;
+}
+.link:hover{
+    color: rgb(0, 93, 173);
+}
+.ar-img{
+    width: 40%;
+    height: 200px;
+    float: left;
+    border-radius: 10%;
+}
+.blog .info{
+    width: 55%;
+    float: right;
+    margin-top: 25px;
+}
+.blog .info .title{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 93, 173);
+    padding-bottom: 5px;
+}
+.blog .info .con{
+    font-size: 20px;
+    line-height: 1.7;
+    margin-left: 25px;
+}
+.blog .see-more{
+    text-align: center;
+    color: white;
+    background: transparent;
+    border: 1px solid rgb(0, 93, 173);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 19px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+/*end conetnt/ views */
+/*start footer */
+.footer{
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(2, 6, 7,.70);
+    margin-top: 50px;
+    padding: 20px;
+}
+.footer p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;   
+    text-align: center;;
+}
+
+/* Media ***************************************/
+@media (max-width: 600px){
+    .nav .sections{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .content .resume .skill{
+        width: 90%;
+    }
+    .downloadbtn{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .blog .article{
+        width: 98%;
+        margin-top: 0px;
+        margin-left: 0%;;
+  
+
+        margin-bottom: 50px;
+        margin-right: 4%;
+    }
+
+}
