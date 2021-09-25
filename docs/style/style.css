@@ -531,6 +531,7 @@ color: rgb(0, 93, 173);
     } 
     .header .intro .summary{
         height: 80%;
+        text-align:left;
     }
     .header .intro .contact{
         height: 15%;
