@@ -26,41 +26,40 @@
 // });
 (function() {
     'use strict';
-    document.getElementById("homeBtn").onclick=async function(){
-        // document.getElementById("home").classList.remove('hidden');
-        // document.getElementById("resume").classList.add('hidden')
-        // document.getElementById("projects").classList.add('hidden')
+    document.getElementById("homeBtn").onclick=()=>showHome()
+    document.getElementById("resumeBtn").onclick=()=>showSkills()
+    document.getElementById("projectsBtn").onclick=()=>showProjects()
+    document.getElementById("menuHomeBtn").onclick=()=>showHome()
+    document.getElementById("menuResumeBtn").onclick=()=>showSkills()
+    document.getElementById("menuProjectsBtn").onclick=()=>showProjects()
+    async function showHome(){
         await  setTimeout(()=>document.getElementById("home").classList.remove('hidden'),500)
         setTimeout(()=>{
          document.getElementById("resume").classList.add('hidden')
          document.getElementById("projects").classList.add('hidden')
         },500)
-
     }
-    document.getElementById("resumeBtn").onclick=async function(){
-        // document.getElementById("resume").classList.remove('hidden');
-        // document.getElementById("home").classList.add('hidden')
-        // document.getElementById("projects").classList.add('hidden')
-
+    async function showSkills(){
         await  setTimeout(()=>document.getElementById("resume").classList.remove('hidden'),500)
         setTimeout(()=>{
          document.getElementById("home").classList.add('hidden')
          document.getElementById("projects").classList.add('hidden')
         },500)
-
     }
-    document.getElementById("projectsBtn").onclick=async function(){
-        // document.getElementById("projects").classList.remove('hidden');
-        // document.getElementById("resume").classList.add('hidden')
-        // document.getElementById("home").classList.add('hidden')
-
+    async function showProjects(){
         await  setTimeout(()=>document.getElementById("projects").classList.remove('hidden'),500)
         setTimeout(()=>{
          document.getElementById("resume").classList.add('hidden')
          document.getElementById("home").classList.add('hidden')
         },500)
+    }
+
+    document.getElementById("menuIcon").onclick=async function(){
+         //document.getElementById("normalNav").classList.toggle('hidden')
+         document.getElementById("menu").classList.toggle('hidden')
 
     }
+
   })()
 window.onload=function(){
     

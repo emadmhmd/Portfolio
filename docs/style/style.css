@@ -6,7 +6,8 @@
 body {
     background: url(../Images/maxresdefault.jpg);
     font-family: 'Open Sans', sans-serif;
-    transition: all 1s ease-in-out
+    transition: all 1s ease-in-out;
+    position: relative;
 }
 
 .container {
@@ -129,6 +130,7 @@ body {
 
 /* end header */
 /* start navbar */
+
 .nav{
     margin-top: 60px;
     overflow: hidden;
@@ -137,6 +139,19 @@ body {
     height: 80px;
     background: rgba(2, 6, 7,.70);
     color: white;
+    position: relative;
+}
+.nav .menuIcon{
+position: absolute;
+right: 50px;
+top: 25%;
+font-size: 25px;
+color: rgb(0, 93, 173);
+}
+#menu .sections{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
 }
 .nav .logo{
     width: 50px;
@@ -153,7 +168,7 @@ body {
     padding: 6px;
 }
 
-.nav .logo span{
+.logo span{
     color: rgb(0, 93, 173);
     padding: 2px;
 }
@@ -161,24 +176,24 @@ body {
     float: right;
     width: 60%;
 }
-.nav .sections ul{
+.sections ul{
     overflow: hidden;
     margin-top: 20px;
 }
-.nav .sections ul li{
+.sections ul li{
    margin-right: 30px;
    float: left;
    list-style: none;
    padding-bottom: 5px;
 }
 
-.nav .sections ul li a:hover{
+.sections ul li a:hover{
     color:rgb(0, 93, 173) ;
     transform: scale(1.5,1.5);
     cursor: pointer;
 
 }
-.nav .sections ul li a{
+.sections ul li a{
     text-decoration: none;
     font-size: 22px;
     color: white;
@@ -475,9 +490,8 @@ body {
 }
 @media (max-width : 1200px) and (min-width : 701px){
     .header .profile{
-        width: 80%;
+        width: 100%;
         height: 600px;
-        margin-left: 10%;
     }
     .header .profile .img{
         width: 40%;
@@ -485,9 +499,8 @@ body {
     }
 
     .Header .intro{
-        width: 80%;
+        width: 100%;
         height: 700px;
-        margin-left: 10%;
     } 
     .concepts .con{
         width: 90%;
@@ -503,18 +516,16 @@ body {
 }
 @media (max-width : 750px){
     .header .profile{
-        width: 80%;
+        width:100%;
         height: 600px;
-        margin-left: 10%;
     }
     .header .profile .img{
         width: 60%;
         margin-top: 100px;
     }
     .Header .intro{
-        width: 80%;
+        width:100%;
         height: 850px;
-        margin-left: 10%;
     } 
     .header .intro .summary{
         height: 80%;
@@ -577,7 +588,23 @@ body {
         line-height: 1.7;
         margin-left: 25px;
     }
- 
+
+
+    .normalNav .sections{
+        display: none;
+    }
+    .normalNav .menuIcon{
+        display: block;
+    }
+    .compare{
+        display: none;
+    }
+  .concepts .con{
+      word-wrap: break-word;
+  }
+  .concepts .con span{
+      display: none;
+  }
 }
 /* 
 @media  (min-width:600px) and (max-width : 990px){  
@@ -602,26 +629,4 @@ body {
         margin-right: 4%;
     }
 }
-@media (max-width: 600px){
-    .nav .sections{
-        display: none;
-    }
-    .container{
-        width: 100%;
-    }
-    .content .resume .skill{
-        width: 90%;
-    }
-    .downloadbtn{
-        padding: 10px;
-        font-size: 18px;
-    }
-    .work .project{
-        width: 98%;
-        margin-top: 0px;
-        margin-left: 0%;;
-        margin-bottom: 50px;
-        margin-right: 4%;
-    }
-
-} */
+*/
