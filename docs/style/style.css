@@ -80,7 +80,8 @@ body {
 .header .intro p{
     font-size: 20px;
     margin-top: 20px;
-    margin-left: 20px;
+   margin-left: 10px;
+    margin-right: 10px;  
     
 }
 .header .intro p::first-letter{
